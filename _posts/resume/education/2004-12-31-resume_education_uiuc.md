@@ -2,8 +2,9 @@
 page_to_display: resume
 section_name: education
 order: 2
-title: University of Illinois
-date: December, 2004
+organization: University of Illinois
+title: Bachelor of Music Education, emphasis in General Music
+date_of_exp: December, 2004
 location: Urbana-Champaign, IL
 subtitle: Bachelor of Music Education, emphasis in General Music
 div_class: education uiuc

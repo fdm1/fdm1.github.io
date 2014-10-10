@@ -19,10 +19,11 @@ baseurl: ""
 
         {% for post in sorted_posts %}
         {% if post.organization != %}
-          <h2>{{ post.organization }}</h2>
+          <h2>{{ post.organization }}<span class="org-location">{{post.location}}</span></h2>
+          <hr>
         {% endif %}
             <div class="resume {{ post.div_class }}" >
-              <h3>{{ post.title }}</h3>
+              <h3>{{ post.title }}<span class="date_of_exp">{{post.date_of_exp}}</span></h2></h3>              
               <p>{{ post.content }}</p>
         </div>
         

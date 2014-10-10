@@ -2,10 +2,10 @@
 page_to_display: resume
 section_name: experience
 order: 5
-organization: District 207 Maine Township High Schools - Maine West
+organization: Maine West High School
 title: Director of Guitar Studies
-date: Aug 2005 – Jun 2010
-location: Des Plaines and Park Ridge, IL
+date_of_exp: Aug 2005 – Jun 2010
+location: Des Plaines/Park Ridge, IL
 subtitle: 
 div_class: experience maine
 ---

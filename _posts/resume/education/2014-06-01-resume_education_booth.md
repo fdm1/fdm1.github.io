@@ -2,10 +2,11 @@
 page_to_display: resume
 section_name: education
 order: 1
-title: University of Chicago Booth School of Business
-date: June, 2014
+organization: University of Chicago Booth School of Business
+title: Master of Business Administration
+date_of_exp: June, 2014
 location: Chicago, IL
-subtitle: Master of Business Administration
+subtitle: 
 div_class: education booth
 ---
 
