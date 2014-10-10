@@ -1,0 +1,5 @@
+#!/usr/bin/env ruby
+make_this_branch = ARGV.first
+puts "creating Branch on local #{make_this_branch}"
+puts `git pull`
+puts `git checkout --track -b #{make_this_branch} origin/#{make_this_branch}`
