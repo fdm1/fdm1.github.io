@@ -4,7 +4,7 @@ section_name: experience
 order: 4
 organization: Zimmerman Law Offices, P.C.
 title: Legal and Administrative Assistant
-date: June, 2014
+date: Jun 2006 – Dec 2011
 location: Chicago, IL
 subtitle: 
 div_class: experience zimmerman

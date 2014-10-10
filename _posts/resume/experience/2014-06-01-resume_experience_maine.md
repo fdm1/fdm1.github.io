@@ -4,8 +4,8 @@ section_name: experience
 order: 5
 organization: District 207 Maine Township High Schools - Maine West
 title: Director of Guitar Studies
-date: June, 2014
-location: Chicago, IL
+date: Aug 2005 – Jun 2010
+location: Des Plaines and Park Ridge, IL
 subtitle: 
 div_class: experience maine
 ---

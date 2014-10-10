@@ -3,7 +3,7 @@ page_to_display: resume
 section_name: experience
 order: 3
 title: Education Coordinator
-date: June, 2014
+date: Jul 2011 – May 2012
 location: Chicago, IL
 subtitle: 
 div_class: experience dabble

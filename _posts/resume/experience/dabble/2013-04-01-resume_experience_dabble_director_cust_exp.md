@@ -3,7 +3,7 @@ page_to_display: resume
 section_name: experience
 order: 2
 title: Director of Customer Experience
-date: June, 2014
+date: May 2012 – Apr 2013
 location: Chicago, IL
 subtitle: 
 div_class: experience dabble

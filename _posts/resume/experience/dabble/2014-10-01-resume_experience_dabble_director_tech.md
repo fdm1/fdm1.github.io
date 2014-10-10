@@ -4,7 +4,7 @@ section_name: experience
 order: 1
 organization: Dabble, Inc.
 title: Director of Operations and Technology
-date: June, 2014
+date: Apr 2013 – Present
 location: Chicago, IL
 subtitle: 
 div_class: experience dabble
