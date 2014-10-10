@@ -3,18 +3,30 @@ title: Resume
 baseurl: "resume"
 ---
 
-<div class="content">
-  <div class="related">
-    <ul>
-      {% for post in site.posts %}
-      	{% if post.page_to_display contains 'resume' %}
-      		<div class="resume {{ post.div_class }}" >
-	      	<h3>{{ post.title }}</h3>
-	      	<p>{{ post.content }}</p>
-			</div>
-	      </li>
-      	{% endif %}
+<div class="resume content">	
+	{% assign resume_sections = (site.posts | where: "page_to_display", "resume" | where: "section_header", "true" | sort: "order")%}
+  
+    <p>
+    <!-- break into "education", "experience", etc. -->
+    	{% for res_section in resume_sections %}
+    
+    		<h1>{{ res_section.title }}</h1>
+    		<!-- in each section, find all sub posts -->
+    		
+    		{% assign sorted_posts = (site.posts | where: 'page_to_display', 'resume' | where: "section_header", "false" | where: "section_name": res_section.section_name | sort: "order" ) %}
+    		
+
+    		{% for post in sorted_posts %}
+				{% if post.organization != %}
+					<h2>{{ post.organization }}</h2>
+				{% endif %}
+      			<div class="resume {{ post.div_class }}" >
+	      			<h3>{{ post.title }}</h3>
+	      			<p>{{ post.content }}</p>
+				</div>
+	      
+	      {% endfor %}
+      	
       {% endfor %}
-    </ul>
-  </div>
+    </p>
 </div>
