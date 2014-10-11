@@ -1,13 +1,4 @@
 # auto: true
-markdown: rdiscount
-permalink: /:year/:month/:day/:title
-rdiscount extensions: [smart]
-name: Frank Massi (@fdm1)
-
-defaults:
-  -
-    scope:
-      path: "" # empty string for all files
-    values:
-      layout: "default"
-      section_header: "false"
+source: _jekyll_source
+desitnation: _jekyll_deploy
+include: [_jekyll_source/*, ]

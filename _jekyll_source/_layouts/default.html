@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="author" content="Frank Massi" />
+    <!-- <title>{{ page.title }}</title> -->
+    <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <!-- <title>{{site.name}}</title> -->
+    <title>{{site.name}}</title>
+
+    <link rel="stylesheet" href="/{{ site.source }}/stylesheets/styles.css">
+    <link rel="stylesheet" href="/{{ site.source }}/stylesheets/pygment_trac.css">
+    <!-- NEED JQUERY -->
+    <script src="javascripts/scale.fix.js"></script>
+    <script src="javascripts/home.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <header>
+      <h2><a href="/">{{ site.name }}</a></h1>
+        <p class="header"></p>
+
+        <ul>
+          <li ><a class="buttons download" href={{ site.resume_url }} target="_blank">{{ site.resume_button_text }}</a></li>
+          <li><a class="buttons linkedin" href={{ site.linkedin_url }} target="_blank">{{ site.linkedin_button_text }}</a></li>
+          <li><a class="buttons github" href={{ site.github_url }} target="_blank">{{ site.github_button_text }}</a></li>
+        </ul>
+
+    </header>
+    <section>
+      {{ content }}
+    </section>
+  </body>
+</html>

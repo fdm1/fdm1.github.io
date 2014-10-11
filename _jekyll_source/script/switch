@@ -1,0 +1,5 @@
+#!/usr/bin/env ruby
+make_this_branch = ARGV.first
+puts "Switching to Branch #{make_this_branch} on local"
+puts `git checkout #{make_this_branch}`
+puts `git pull`
