@@ -1,0 +1,3 @@
+[submodule "jekyll_base"]
+	path = jekyll_base
+	url = git://github.com/fdm1/fdm-jekyll-base.git
