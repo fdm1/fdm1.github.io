@@ -1,4 +1,16 @@
 # auto: true
-source: _jekyll_source
-desitnation: _jekyll_deploy
-include: [_jekyll_source/*, ]
+source: ./_source
+
+
+markdown: rdiscount
+permalink: /:categories/:title
+rdiscount extensions: [smart]
+
+
+defaults:
+  -
+    scope:
+      path: "" # empty string for all files
+    values:
+      layout: "default"
+      section_header: "false"
