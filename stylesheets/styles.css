@@ -415,6 +415,10 @@ footer {
   header li {
     display: inline-block;
   }
+
+  header ul {
+    width: 375px;
+  }
 }
 
 
