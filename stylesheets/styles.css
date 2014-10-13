@@ -23,6 +23,16 @@ time, mark, audio, video {
 }
 
 
+.slide-up, .slide-down {
+  font-size: 13px;
+  padding-left: 10px;
+  margin-bottom: 10px;
+}
+
+
+.hidden {
+  display: none;
+}
 /* Base text styles */
 
 body {

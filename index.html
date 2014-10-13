@@ -9,8 +9,8 @@ baseurl: ""
     <p>
       {% for res_section in resume_sections %}
         <div class="section-header {{ res_section.section_name }}">
-          <h1>{{ res_section.title }}</h1>
-          
+          <h1>{{ res_section.title }}<span class="slide-up"><a>(hide)</a></span><span class="slide-down hidden"><a>(expand)</a></span></h1>
+          <div class="main-section">
           <!-- {% assign sorted_posts = (site.posts ) %} -->
           {% assign sorted_posts = (site.posts | where: 'page_to_display', 'resume' | where: "section_header", "false" | where: "section_name": res_section.section_name | sort: "order" ) %}
           
@@ -41,6 +41,7 @@ baseurl: ""
           </div>
         
           {% endfor %}
+          </div>
         </div>
       {% endfor %}
       
