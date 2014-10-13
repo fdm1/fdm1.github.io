@@ -1,0 +1,12 @@
+- text: PDF Resume
+  url: https://github.com/fdm1/fdm1.github.io/blob/master/files/fdm_Resume_github.pdf?raw=true
+  class: download
+
+- text: LinkedIn
+  url: https://www.linkedin.com/in/frankmassi
+  class: linkedin
+
+- text: Github
+  url: https://github.com/fdm1/
+  class: github
+

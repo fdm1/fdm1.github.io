@@ -320,7 +320,14 @@ a.buttons {
 }
 
 a.github {
-	background: url(../images/octocat-small.png) no-repeat 1px;
+  background: url(../images/octocat-small.png) no-repeat 1px;
+}
+
+a.linkedin {
+	background: url(../images/li-small.png) no-repeat 1px;
+}
+.header-link-text {
+  padding-left: 10px;
 }
 
 a.buttons:hover {
