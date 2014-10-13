@@ -10,11 +10,18 @@
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
     <title>{{ site.data.text.site_name }}</title>
 
-    <link rel="stylesheet" href="/stylesheets/styles.css">
-    <link rel="stylesheet" href="/stylesheets/pygment_trac.css">
-    <!-- NEED JQUERY -->
-    <script src="javascripts/scale.fix.js"></script>
-    <script src="javascripts/home.js"></script>
+    {% for files in site.data.css_and_js %}
+      {% for css in files.css_files %}
+        <link rel="stylesheet" href="/stylesheets/{{ css.filepath }}">      
+      {% endfor %}
+
+      {% for js in files.javascript_files %}
+        <script src="javascripts/{{ js.filepath }}"></script>
+      {% endfor %}
+    
+    {% endfor %}
+    
+    
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
