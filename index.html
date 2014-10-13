@@ -17,7 +17,17 @@ baseurl: ""
 
           {% for post in sorted_posts %}
           {% if post.organization != %}
-            <h2><span class="org-name">{{ post.organization }}</span><span class="org-location">{{post.location}}</span></h2>
+            {% if post.organization_url !=  %}
+              <h2>
+               
+                  <span class="org-name-link"> {{ post.organization }} <span class="org-link">(<a href={{ post.organization_url }} target="_blank">{{ post.organization_url_text }}</a>)</span></span> 
+                
+
+                <span class="org-location">{{post.location}}</span>
+              </h2>
+            {% else %}
+              <h2><span class="org-name">{{ post.organization }}</span><span class="org-location">{{post.location}}</span></h2>
+            {% endif %}
             <hr>
           {% endif %}
               <div class="resume {{ post.div_class }}" >

@@ -82,7 +82,7 @@ h4, h5, h6 {
 }
 
 a {
-  color:#C30000;
+  color:#244f9e;
   font-weight:200;
   text-decoration:none;
 }
@@ -267,6 +267,10 @@ h2 .org-location, h3 .date_of_exp {
   font-size: 15px;    
 }
 
+h2 .org-link {
+  padding-left: 5px;
+} 
+
 header ul {
   list-style:none;
   padding:0;
@@ -411,7 +415,7 @@ footer {
 }
 
 @media print, screen and (max-width: 860px) {
-  h2 .org-name, h3 .position-title {
+  h2 .org-name-link, h2 .org-name, h3 .position-title  {
     display: block;
     padding-bottom: 5px;
   }
@@ -423,11 +427,12 @@ footer {
   h3 .date_of_exp {
     float: left;
   }
+  h2 {padding-bottom: 12px;}
 } 
 
 @media print, screen and (max-width: 720px) {
 
-  h2 .org-name, h3 .position-title {
+  h2 .org-name-link, h2 .org-name, h3 .position-title {
     padding-bottom: 5px;
   }
 
