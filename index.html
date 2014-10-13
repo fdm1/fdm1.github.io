@@ -20,7 +20,7 @@ baseurl: ""
             {% if post.organization_url !=  %}
               <h2>
                
-                  <span class="org-name-link"> {{ post.organization }} <span class="org-link">(<a href={{ post.organization_url }} target="_blank">{{ post.organization_url_text }}</a>)</span></span> 
+                  <span class="org-name"> {{ post.organization }} <span class="org-link">(<a href={{ post.organization_url }} target="_blank">{{ post.organization_url_text }}</a>)</span></span> 
                 
 
                 <span class="org-location">{{post.location}}</span>
@@ -44,6 +44,6 @@ baseurl: ""
           </div>
         </div>
       {% endfor %}
-      
+
     </p>
 </div>
