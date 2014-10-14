@@ -3,8 +3,7 @@ page_to_display: resume
 section_name: experience
 order: 1
 organization: Dabble, Inc.
-organization_url: https://dabble.co
-organization_url_text: dabble.co
+organization_link_var: dabble_resume
 title: Director of Operations and Technology
 date_of_exp: Apr 2013 – Present
 location: Chicago, IL

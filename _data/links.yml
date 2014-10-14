@@ -1,0 +1,11 @@
+dabble_resume:
+  url: https://dabble.co
+  url_text: dabble.co
+  ga_event_category: "resume_link"
+  ga_event_label: "experience_dabble"
+
+data_mining_resume:
+  url: https://github.com/fdm1/Data-Mining
+  url_text: 'Data mining'
+  ga_event_category: "resume_link"
+  ga_event_label: "additional_info_data_mining_repo"

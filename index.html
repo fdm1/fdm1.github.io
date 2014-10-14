@@ -17,10 +17,17 @@ baseurl: ""
 
           {% for post in sorted_posts %}
           {% if post.organization != %}
-            {% if post.organization_url !=  %}
+            {% if post.organization_link_var !=  %}
+
+              
+              {% assign link_info = (site.data.links[post.organization_link_var]) %}
               <h2>
                
-                  <span class="org-name"> {{ post.organization }} <span class="org-link">(<a href={{ post.organization_url }} target="_blank">{{ post.organization_url_text }}</a>)</span></span> 
+                  <span class="org-name"> {{ post.organization }} <span class="org-link">(
+                  <a href={{ link_info.url }} target="_blank", onClick="ga('send', 'event', '{{ link_info.ga_event_category }}', 'click', '{{ link_info.ga_event_label }}');">
+                    {{ link_info.url_text }}
+                  </a>
+                  )</span></span> 
                 
 
                 <span class="org-location">{{post.location}}</span>
