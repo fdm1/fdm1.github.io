@@ -6,29 +6,51 @@ baseurl: ""
 
 <div class="resume content">  
   {% assign resume_sections = (site.posts | where: "page_to_display", "resume" | where: "section_header", "true" | sort: "order")%}
-  
     <p>
-    <!-- break into "education", "experience", etc. -->
       {% for res_section in resume_sections %}
-    
-        <h1>{{ res_section.title }}</h1>
-        <!-- in each section, find all sub posts -->
-        
-        {% assign sorted_posts = (site.posts | where: 'page_to_display', 'resume' | where: "section_header", "false" | where: "section_name": res_section.section_name | sort: "order" ) %}
-        
+        <div class="section-header {{ res_section.section_name }}">
+          <h1>{{ res_section.title }}<span class="slide-up"><a>(hide)</a></span><span class="slide-down hidden"><a>(expand)</a></span></h1>
+          <div class="main-section">
+          <!-- {% assign sorted_posts = (site.posts ) %} -->
+          {% assign sorted_posts = (site.posts | where: 'page_to_display', 'resume' | where: "section_header", "false" | where: "section_name": res_section.section_name | sort: "order" ) %}
+          
 
-        {% for post in sorted_posts %}
-        {% if post.organization != %}
-          <h2>{{ post.organization }}<span class="org-location">{{post.location}}</span></h2>
-          <hr>
-        {% endif %}
-            <div class="resume {{ post.div_class }}" >
-              <h3>{{ post.title }}<span class="date_of_exp">{{post.date_of_exp}}</span></h2></h3>              
-              <p>{{ post.content }}</p>
+          {% for post in sorted_posts %}
+          {% if post.organization != %}
+            {% if post.organization_link_var !=  %}
+
+              
+              {% assign link_info = (site.data.links[post.organization_link_var]) %}
+              <h2>
+               
+                  <span class="org-name"> {{ post.organization }} <span class="org-link">(
+                  <a href={{ link_info.url }} target="_blank", onClick="ga('send', 'event', '{{ link_info.ga_event_category }}', 'click', '{{ link_info.ga_event_label }}');">
+                    {{ link_info.url_text }}
+                  </a>
+                  )</span></span> 
+                
+
+                <span class="org-location">{{post.location}}</span>
+              </h2>
+            {% else %}
+              <h2><span class="org-name">{{ post.organization }}</span><span class="org-location">{{post.location}}</span></h2>
+            {% endif %}
+            <hr>
+          {% endif %}
+              <div class="resume {{ post.div_class }}" >
+                <h3><span class="position-title">{{ post.title }}</span><span class="date_of_exp">{{post.date_of_exp}}</span></h2></h3>              
+                
+                {% if post.section_header != "true" %}
+
+                  <div class="section-content">{{ post.content }}</div>
+
+                {% endif %}
+          </div>
+        
+          {% endfor %}
+          </div>
         </div>
-        
-        {% endfor %}
-        
       {% endfor %}
+
     </p>
 </div>
