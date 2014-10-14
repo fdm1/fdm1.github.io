@@ -1,5 +1,5 @@
-env: production
-ga: UA-42868196-3
+env: development
+ga: UA-42868196-4
 
 markdown: rdiscount
 permalink: /:categories/:title

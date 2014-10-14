@@ -7,3 +7,4 @@
   - filepath: jquery-2.1.1.min.js
   - filepath: scale.fix.js
   - filepath: home.js
+  - filepath: ga.js

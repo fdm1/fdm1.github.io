@@ -9,11 +9,12 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
     <title>{{ site.data.text.site_name }}</title>
-
+    <ga data-key={{ site.ga }}></ga>
     {% for files in site.data.css_and_js %}
       {% for css in files.css_files %}
         <link rel="stylesheet" href="/stylesheets/{{ css.filepath }}">      
       {% endfor %}
+
 
       {% for js in files.javascript_files %}
         <script src="javascripts/{{ js.filepath }}"></script>
