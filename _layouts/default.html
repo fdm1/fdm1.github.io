@@ -39,7 +39,7 @@
         <ul>
           {% for button in site.data.header_buttons %}
 
-            <li ><a class="buttons {{ button.class }}" href={{ button.url }} target="_blank"><span class="header-link-text">{{ button.text }}</span></a></li>
+            <li ><a class="buttons {{ button.class }}" href={{ button.url }} target="_blank" onClick="ga('send', 'event', 'header_buttons', 'click', '{{ button.ga_event_label }}');;"><span class="header-link-text">{{ button.text }}</span></a></li>
           
           {% endfor %}
         </ul>

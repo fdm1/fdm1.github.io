@@ -1,16 +1,19 @@
 - text: PDF Resume
   url: https://github.com/fdm1/fdm1.github.io/blob/master/files/fdm_Resume_github.pdf?raw=true
   class: download
+  ga_event_label: "pdf_resume"
 
 - text: LinkedIn
   url: https://www.linkedin.com/in/frankmassi
   class: linkedin
+  ga_event_label: "linkedin"
 
 - text: Github
   url: https://github.com/fdm1/
   class: github
+  ga_event_label: "github"
 
 - text: Data Mining
   url: https://github.com/fdm1/Data-Mining
   class: github
-
+  ga_event_label: "data_mining_repo"
